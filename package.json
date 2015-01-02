@@ -4,7 +4,10 @@
   "description": "Create a responsive page, and export multiple pngs",
   "main": "iconoclast.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node --color spec"
+  },
+  "bin": {
+    "iconoclast": "iconoclast.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   },
   "homepage": "https://github.com/purplecabbage/iconoclast",
   "dependencies": {
+    "phantom": "~0.7.1",
     "phantomjs": "~1.9.13"
   },
   "devDependencies": {

@@ -2,6 +2,7 @@
 function draw() {
   var canvas = document.getElementById('canvas') ||
   			   document.createElement('canvas');
+  			   
 
   if (canvas.getContext){
     var ctx = canvas.getContext('2d');
